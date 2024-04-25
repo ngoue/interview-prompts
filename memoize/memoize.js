@@ -11,7 +11,5 @@ function add(x, y) {
 }
 
 const memoAdd = memoize(add);
-let result1 = memoAdd(1, 2); // calculate
-console.log(result1);
-let result2 = memoAdd(1, 2); // use cache
-console.log(result1);
+console.log(memoAdd(1, 2)); // calculate
+console.log(memoAdd(1, 2)); // use cache
